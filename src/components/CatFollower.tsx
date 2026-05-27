@@ -60,8 +60,7 @@ export default function CatFollower() {
         zIndex: 9999,
         transform: `${flipped ? "scaleX(-1)" : "scaleX(1)"} ${jumping ? "translateY(-18px)" : "translateY(0)"}`,
         transition: "transform 0.15s ease",
-        mixBlendMode: "multiply",
-        animation: "monkey-colors 0.5s linear infinite",
+        animation: "monkey-colors 0.6s linear infinite",
       }}
     />
   );

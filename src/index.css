@@ -178,32 +178,20 @@
 
 @keyframes monkey-colors {
   0% {
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) hue-rotate(0deg)
-      saturate(3);
-  }
-  16% {
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) hue-rotate(60deg)
-      saturate(3);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) sepia(1) saturate(6)
+      hue-rotate(180deg);
   }
   33% {
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) hue-rotate(120deg)
-      saturate(3);
-  }
-  50% {
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) hue-rotate(180deg)
-      saturate(3);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) sepia(1) saturate(6)
+      hue-rotate(20deg);
   }
   66% {
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) hue-rotate(240deg)
-      saturate(3);
-  }
-  83% {
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) hue-rotate(300deg)
-      saturate(3);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) sepia(1) saturate(6)
+      hue-rotate(290deg);
   }
   100% {
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) hue-rotate(360deg)
-      saturate(3);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) sepia(1) saturate(6)
+      hue-rotate(180deg);
   }
 }
 
