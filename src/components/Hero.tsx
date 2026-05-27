@@ -27,6 +27,7 @@ export default function Hero() {
           <p className="rainbow-text text-lg md:text-xl font-bold blink-text">
             чипс рукоблудик
           </p>
+          <img src="https://cdn.poehali.dev/projects/1351dd47-e3a2-4248-b7d6-5353387b8c05/files/ccfab30e-4c51-4b8f-8878-7dce6eae293d.jpg" alt="котенок" className="mt-6 w-48 h-48 object-cover rounded-2xl shadow-lg" />
         </motion.div>
       </div>
 
