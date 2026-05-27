@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
 const CAT_URL =
-  "https://cdn.poehali.dev/projects/1351dd47-e3a2-4248-b7d6-5353387b8c05/files/34bedff3-6c81-4b7c-8b06-8e76e68b1184.jpg";
+  "https://cdn.poehali.dev/projects/1351dd47-e3a2-4248-b7d6-5353387b8c05/files/419d2ef6-f0c5-4b79-bba3-260d22b11737.jpg";
 
 export default function CatFollower() {
   const [pos, setPos] = useState({ x: 200, y: 200 });
