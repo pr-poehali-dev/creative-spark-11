@@ -66,7 +66,7 @@ export default function Hero() {
               exit={{ opacity: 0 }}
               className="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-4 py-3 text-white text-sm whitespace-nowrap shadow-lg"
             >
-              🎉 Ты нажал! Молодец!
+              ИДИ НАХУЙ
             </motion.div>
           )}
         </motion.div>
