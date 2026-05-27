@@ -22,7 +22,7 @@ export default function Hero() {
             Ютер здесь
           </h1>
           <p className="rainbow-text text-lg md:text-xl max-w-xl mb-8 leading-relaxed font-semibold">
-            Добро пожаловать на личный сайт. Здесь живут идеи, ссылки и всё самое интересное.
+            докс на заказ 3 пиццы
           </p>
         </motion.div>
       </div>
