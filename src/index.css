@@ -97,6 +97,88 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family:
+      "Montserrat",
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      sans-serif;
+    overflow-x: hidden;
   }
+}
+
+@keyframes rainbow {
+  0% {
+    color: #ff6ec7;
+    text-shadow:
+      0 0 20px #ff6ec7,
+      0 0 40px #ff6ec7;
+  }
+  14% {
+    color: #a78bfa;
+    text-shadow:
+      0 0 20px #a78bfa,
+      0 0 40px #a78bfa;
+  }
+  28% {
+    color: #60a5fa;
+    text-shadow:
+      0 0 20px #60a5fa,
+      0 0 40px #60a5fa;
+  }
+  42% {
+    color: #34d399;
+    text-shadow:
+      0 0 20px #34d399,
+      0 0 40px #34d399;
+  }
+  57% {
+    color: #facc15;
+    text-shadow:
+      0 0 20px #facc15,
+      0 0 40px #facc15;
+  }
+  71% {
+    color: #fb923c;
+    text-shadow:
+      0 0 20px #fb923c,
+      0 0 40px #fb923c;
+  }
+  85% {
+    color: #f87171;
+    text-shadow:
+      0 0 20px #f87171,
+      0 0 40px #f87171;
+  }
+  100% {
+    color: #ff6ec7;
+    text-shadow:
+      0 0 20px #ff6ec7,
+      0 0 40px #ff6ec7;
+  }
+}
+
+.rainbow-text {
+  animation: rainbow 3s linear infinite;
+}
+
+@keyframes red-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 20px rgba(239, 68, 68, 0.6),
+      0 0 40px rgba(239, 68, 68, 0.3);
+  }
+  50% {
+    box-shadow:
+      0 0 35px rgba(239, 68, 68, 0.9),
+      0 0 70px rgba(239, 68, 68, 0.5);
+  }
+}
+
+.red-btn {
+  background: linear-gradient(180deg, #ef4444 0%, #b91c1c 100%);
+  border: none;
+  border-radius: 1rem;
+  animation: red-pulse 2s ease-in-out infinite;
 }

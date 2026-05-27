@@ -1,38 +1,44 @@
-import { useScroll, useTransform, motion } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
 
 export default function Promo() {
-  const container = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset: ["start end", "end start"],
-  });
-  const y = useTransform(scrollYProgress, [0, 1], ["-10vh", "10vh"]);
-
   return (
     <div
-      ref={container}
-      className="relative flex items-center justify-center h-screen overflow-hidden"
-      style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
+      id="about"
+      className="relative min-h-screen flex items-center justify-center px-8 md:px-16 z-10 py-24"
     >
-      <div className="fixed top-[-10vh] left-0 h-[120vh] w-full">
-        <motion.div style={{ y }} className="relative w-full h-full">
-          <img
-            src="/images/spiral-circles.jpg"
-            alt="Abstract spiral circles"
-            className="w-full h-full object-cover"
-          />
+      <div className="max-w-4xl w-full text-center">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="bg-white/5 border border-white/10 rounded-[3rem] p-12 md:p-20 backdrop-blur-sm relative overflow-hidden"
+        >
+          {/* Glow orbs */}
+          <div className="absolute -top-20 -left-20 w-60 h-60 bg-purple-600/30 rounded-full blur-3xl" />
+          <div className="absolute -bottom-20 -right-20 w-60 h-60 bg-blue-600/30 rounded-full blur-3xl" />
+
+          <p className="text-purple-300 uppercase text-sm tracking-widest mb-6 relative z-10">Обо мне</p>
+          <h2 className="text-4xl md:text-6xl font-black text-white mb-8 leading-tight relative z-10">
+            Привет, я Ютер
+          </h2>
+          <p className="text-white/60 text-lg md:text-xl leading-relaxed relative z-10 max-w-2xl mx-auto">
+            Это мой личный уголок в интернете. Здесь я собираю всё важное — ссылки,
+            страницы, проекты. Если ты здесь, значит, ты нашёл правильное место.
+          </p>
+
+          <div className="mt-12 flex flex-wrap justify-center gap-4 relative z-10">
+            {["Дизайн", "Разработка", "Идеи", "Проекты"].map((tag) => (
+              <span
+                key={tag}
+                className="px-5 py-2 rounded-full bg-white/10 border border-white/20 text-white/70 text-sm hover:bg-purple-500/20 hover:text-white hover:border-purple-400/50 transition-all duration-300 cursor-default"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
         </motion.div>
       </div>
-
-      <h3 className="absolute top-12 right-6 text-white uppercase z-10 text-sm md:text-base lg:text-lg">
-        Анатомия возможностей
-      </h3>
-
-      <p className="absolute bottom-12 right-6 text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-5xl z-10">
-        Каждая секция — рамка для твоей истории. Формируй её, миксуй и позволь контенту
-        литься в неожиданные паттерны, заставляя листать дальше.
-      </p>
     </div>
   );
 }
