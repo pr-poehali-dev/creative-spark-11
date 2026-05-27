@@ -21,24 +21,9 @@ export default function Hero() {
           <h1 className="rainbow-text text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight">
             Ютер здесь
           </h1>
-          <p className="text-white/70 text-lg md:text-xl max-w-xl mb-8 leading-relaxed">
+          <p className="rainbow-text text-lg md:text-xl max-w-xl mb-8 leading-relaxed font-semibold">
             Добро пожаловать на личный сайт. Здесь живут идеи, ссылки и всё самое интересное.
           </p>
-
-          <div className="flex flex-col gap-4 max-w-lg">
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
-              <h3 className="text-purple-300 font-semibold mb-2 text-sm uppercase tracking-wide">Страницы</h3>
-              <p className="text-white/60 text-sm">Коллекция моих работ и материалов</p>
-            </div>
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
-              <h3 className="text-blue-300 font-semibold mb-2 text-sm uppercase tracking-wide">Короткие ссылки</h3>
-              <p className="text-white/60 text-sm">Быстрый доступ ко всему важному</p>
-            </div>
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/10 transition-all duration-300">
-              <h3 className="text-pink-300 font-semibold mb-2 text-sm uppercase tracking-wide">Контакты</h3>
-              <p className="text-white/60 text-sm">Найди меня где угодно</p>
-            </div>
-          </div>
         </motion.div>
       </div>
 
