@@ -24,6 +24,9 @@ export default function Hero() {
           <p className="rainbow-text text-lg md:text-xl max-w-xl mb-8 leading-relaxed font-semibold">
             докс на заказ 3 пиццы
           </p>
+          <p className="rainbow-text text-lg md:text-xl font-bold blink-text">
+            чипс рукоблудик
+          </p>
         </motion.div>
       </div>
 
