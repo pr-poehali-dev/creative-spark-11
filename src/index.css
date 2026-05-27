@@ -176,6 +176,37 @@
   }
 }
 
+@keyframes monkey-colors {
+  0% {
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) hue-rotate(0deg)
+      saturate(3);
+  }
+  16% {
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) hue-rotate(60deg)
+      saturate(3);
+  }
+  33% {
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) hue-rotate(120deg)
+      saturate(3);
+  }
+  50% {
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) hue-rotate(180deg)
+      saturate(3);
+  }
+  66% {
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) hue-rotate(240deg)
+      saturate(3);
+  }
+  83% {
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) hue-rotate(300deg)
+      saturate(3);
+  }
+  100% {
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) hue-rotate(360deg)
+      saturate(3);
+  }
+}
+
 @keyframes blink {
   0%,
   100% {

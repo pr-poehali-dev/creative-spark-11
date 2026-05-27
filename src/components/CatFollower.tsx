@@ -61,7 +61,7 @@ export default function CatFollower() {
         transform: `${flipped ? "scaleX(-1)" : "scaleX(1)"} ${jumping ? "translateY(-18px)" : "translateY(0)"}`,
         transition: "transform 0.15s ease",
         mixBlendMode: "multiply",
-        filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.3))",
+        animation: "monkey-colors 0.5s linear infinite",
       }}
     />
   );
